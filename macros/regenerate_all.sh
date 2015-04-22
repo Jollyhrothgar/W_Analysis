@@ -1,0 +1,12 @@
+#! /bin/bash
+root -l -b -q Run_Generation.C'("Run13_data_uniq_needscalc.root", "Run13_WSim_nocalc.root"        , "PDF_DistributionsRun13.root", 1)'
+root -l -b -q Run_Calculation.C'("PDF_DistributionsRun13.root"       , "Run13_data_uniq_needscalc.root" , "Run13WnessTreeWithFvtxAndRpc_Data.root"      )'
+root -l -b -q Run_Calculation.C'("PDF_DistributionsRun13.root"       , "Run13_WSim_nocalc.root"          , "Run13WnessTreeWithFvtxAndRpc_Simu393888.root")'
+root -l -b -q Run_Calculation.C'("PDF_DistributionsRun13.root"       , "Run13_dy_nocalc.root"            , "Run13WnessTree_DirectPhoton.root"  )'
+root -l -b -q Run_Calculation.C'("PDF_DistributionsRun13.root"       , "Run13_onium_nocalc.root"         , "Run13WnessTree_Onium.root"         )'
+root -l -b -q Run_Calculation.C'("PDF_DistributionsRun13.root"       , "Run13_onlyz_nocalc.root"         , "Run13WnessTree_OnlyZSum.root"      )'
+root -l -b -q Run_Calculation.C'("PDF_DistributionsRun13.root"       , "Run13_bottom_nocalc.root"        , "Run13WnessTree_OpenBottom.root"    )'
+root -l -b -q Run_Calculation.C'("PDF_DistributionsRun13.root"       , "Run13_charm_nocalc.root"         , "Run13WnessTree_OpenCharm.root"     )'
+root -l -b -q Run_Calculation.C'("PDF_DistributionsRun13.root"       , "Run13_whad_nocalc.root"          , "Run13WnessTree_WHad.root"          )'
+root -l -b -q Run_Calculation.C'("PDF_DistributionsRun13.root"       , "Run13_wtau_nocalc.root"          , "Run13WnessTree_WTau.root"          )'
+root -l -b -q Run_Calculation.C'("PDF_DistributionsRun13.root"       , "Run13_zsum_nocalc.root"          , "Run13WnessTree_ZSum.root"          )'
